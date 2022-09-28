@@ -1,0 +1,200 @@
+
+
+
+.header { 
+    display: flex;
+    height: 58px;
+    align-items: stretch    ;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(210, 210, 210);
+    border-bottom-style: solid;
+    z-index: 1;
+}
+
+.leftheader {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.hamburger {
+    height: 25px;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+.youtube {
+    height: 20px;
+    cursor: pointer;
+}
+
+.middleheader {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    max-width: 480px;
+}
+
+input {
+    padding: 10px 10px;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    border-color: rgb(204, 204, 204);
+    max-width: 400px;
+    font-size: 16px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+    width: 0;
+}
+
+input::placeholder {
+    font-family: Roboto, arial;
+    font-size: 15px;
+}
+
+.searchicon {
+    height: 25px;
+    padding: 3px;
+}
+
+.searchiconbutton {
+    border-color: rgb(204, 204, 204);
+    background-color: rgb(248, 248, 248);
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 20px;
+    align-items: center;
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchiconbutton,
+.voiceiconbutton,
+.rightbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.searchiconbutton .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    bottom: -34px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.searchiconbutton:hover .tooltip {
+    opacity: 1;
+}
+
+.voiceiconbutton {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+    margin-left: 9px;
+}
+
+.voiceiconbutton .tooltip {
+    width: 120px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    bottom: -33px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.voiceiconbutton:hover .tooltip {
+    opacity: 1;
+}
+
+.voice {
+    width: 25px;
+}
+
+.rightheader {
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.nonotif{
+    background-color: rgb(204, 0 ,0);
+    font-size: 10px;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    text-size-adjust: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.righticon {
+    width: 24px;
+}
+
+.rightbuttons {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.rightbuttons .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.rightbuttons:hover .tooltip {
+    opacity: 1;
+}
+
+.romatic {
+    width: 33px;
+    border-radius: 50%;
+}
+
